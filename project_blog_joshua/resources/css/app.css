@@ -1,0 +1,349 @@
+
+/* Base style */
+ *, *::before, *:after {
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+ }
+
+ :root {
+    --ink:    #0e0c0a;  /* main text color */
+    --paper:  #ffffff;  /* background */
+    --accent: #3fc246;  /* brand orange */
+    --muted:  #7a7060;  /* secondary text */
+    --border: #d4c9b0;  /* borders */
+    --card:   #ecffe9;  /* card background */
+ }
+
+
+.header_container{
+    position: sticky;
+    top:0;
+    z-index: 100;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+}
+
+ header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+ header h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+ 
+header span{
+    color:var(--accent);
+}
+nav {
+    display: flex; 
+    gap: 1.8rem; 
+}
+ 
+ nav a {
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    text-decoration: none;
+    transition: color 0.2s;
+}
+ 
+ nav a:hover{
+    color: var(--accent); 
+}
+
+
+
+/* 
+HOME STYLE */
+
+#home .welcome_banner{
+    background-color: var(--paper);
+    /* color: var(--paper); */
+    padding:4.5rem 2rem;
+    text-align: center;
+    height: 45rem;
+    border-bottom: 1px solid var(--accent);
+
+}
+/* .home .welcome_banner h1  h2 p{
+
+
+} */
+#home .welcome_banner h1{
+    font-size: 1.2rem;
+    color: var(--accent);
+    max-width: 520px;
+    margin: 5rem auto 1rem;
+    line-height: 1.8;
+    letter-spacing:0.2em;
+}
+
+#home .welcome_banner h2{
+    font-family: Georgia, serif;
+    font-size: 3rem;
+   
+}
+
+#home .welcome_banner p {
+    font-size: 1.2rem;
+    /* color: rgba(245, 240, 232, 0.65); */
+    max-width: 520px;
+    margin: 1rem auto 1rem;
+    line-height: 1.8;
+}
+
+#home .author_profile {
+    display: inline-flex; 
+    align-items: center;
+    gap: 0.8rem; 
+    background: rgba(211, 255, 222, 0.07); 
+    border: 1px solid var(--accent);
+    padding: 1rem 1.2rem; 
+    width:30rem;
+    margin-top:30px;
+    }
+#home .author_profile img {
+    width: 95px; 
+    height: 90px; 
+    border-radius: 50%;
+    border:3px solid var(--accent);
+    margin-right:30px;
+    } 
+
+#home .author_desc h3{ 
+    font-size: 1.5rem; 
+    font-weight: 500; 
+    margin-top: 3px; 
+    margin-bottom: 8px;
+    }
+#home .author_desc p{
+    font-size: 1rem;
+    max-width: 520px;
+    margin-top:3px;
+    margin-bottom: 6px;
+}
+
+#home .blog_container{
+    margin-top: 60px;
+}
+#home .blog_container a{
+    font-size: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: none;
+    transition: color 0.2s;
+    border: 1px solid var(--accent);
+    border-radius: 20px;
+    padding:20px
+}
+ 
+#home .blog_container a:hover{
+    color: var(--accent); 
+
+}
+
+/* about */
+#about .hero_container{
+    background-color: var(--card);
+    
+    padding:4.5rem 2rem;
+    text-align: left;
+    height: 13rem;
+    
+}
+#about .hero_container h2{
+    font-family: 'Space Mono', monospace;
+    font-size:1rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+    letter-spacing:0.3em; 
+    margin-left:130px;
+}
+#about .hero_container h1{
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    margin-left:130px;
+}
+#about .page_content{
+    max-width:900px;
+    margin:0 auto;
+    padding:3.5rem 2rem 5rem;
+}
+#about .about_grid{
+    display:block;
+}
+#about .section_label{
+    font-family: 'Space Mono', monospace; 
+    font-size: 1rem;
+    letter-spacing:0.2em; 
+    color: var(--accent); 
+    margin-bottom: 0.4rem; 
+}
+#about .section_title{
+    font-family: Georgia, serif;
+    font-size: 1.9rem; 
+    margin-bottom: 1rem
+}
+#about p{
+     font-size: 0.92rem; 
+     color: #4a4540; 
+     line-height: 1.85; 
+     margin-bottom: 1.1rem;
+}
+
+#about .content_block{
+    margin-top:2.5rem;
+}
+
+#about .skills_grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem; 
+}
+
+#about .skills_item{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-left:3px solid var(--accent);
+    padding:1rem 1.2rem;
+}
+#about .skills_item:hover{
+    transform: translateX(3px);
+
+}
+#about .skill_name{
+    font-size:0.92rem;
+    color:var(--ink);
+    margin-bottom: 0.25rem;
+}
+
+#about .skill_desc{
+    font-size: 0.8rem;
+    color:var(--muted);
+    line-height: 1.5;
+}
+
+#about .timeline{
+    margin-top:1rem;
+
+}
+
+#about .timeline_item{
+    display:flex;
+    gap:1.2rem;
+    padding:1rem 0;
+    border-bottom:1px solid var(--accent);
+}
+
+#about .timeline_item:last-child{
+    border-bottom:none;
+}
+
+#about .timeline_year{
+    font-family: 'Space Mono', monospace;
+    font-size: 0.68rem;
+    white-space: nowrap;
+    margin-top:0.2rem;
+    min-width:82px;
+    color: var(--accent);
+}
+
+#about .timeline_title{
+    font-size: 0.92rem;
+    color:var(--ink);
+    margin-bottom: 0.2rem;
+}
+#about .timeline_desc { 
+    font-size: 0.82rem; 
+    color: var(--muted); 
+    line-height: 1.5;
+}
+
+
+/* contact */
+
+#contact .hero_container{
+    background-color: var(--card);
+    color: var(--ink);
+    padding:4.5rem 2rem;
+    text-align: left;
+    height: 25rem;
+    border: 1px solid var(--accent);
+}
+
+#contact .hero_tag{
+    font-size: 1rem;
+    max-width: 520px;
+    color:var(--accent);
+    line-height: 1.8;
+    letter-spacing:0.2em;
+    
+}
+
+#contact .hero_title{
+    font-family: Georgia, serif;
+    font-size: 3rem;
+}
+
+#contact .hero_desc{
+    font-size:1rem;
+    color: var(--muted);
+    margin-top:3px ;
+    margin-bottom: 20px;
+    max-width: 470px;
+    line-height: 1.8;
+    
+}
+
+#contact .contact_grid{
+  
+    margin-left:130px ;
+    padding:2em;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1rem;
+}
+
+#contact .contact_item{
+    text-align: center;
+    margin-left: 30px;
+}
+
+#contact .contact_item:first-child{
+    text-align: start;
+    margin-left: 0;
+    
+}
+#contact .detail_icon img{
+    margin-top: 70px;
+    width: 30px; 
+    height: 30px; 
+}
+
+#contact .detail_label {
+    font-family: 'Space Mono';
+    font-size: 1rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#contact .detail_value{
+    font-size: 1rem;
+    color:var(--ink);
+}
+
