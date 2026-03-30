@@ -155,19 +155,18 @@ HOME STYLE */
 
 /* about */
 #about .hero_container{
-    background-color: var(--card);
-    
+    background-color: var(--card); 
     padding:4.5rem 2rem;
     text-align: left;
     height: 13rem;
     
 }
 #about .hero_container h2{
-    font-family: 'Space Mono', monospace;
-    font-size:1rem;
-    color: var(--accent);
-    margin-bottom: 20px;
-    letter-spacing:0.3em; 
+    font-size: 1rem;
+    max-width: 520px;
+    color:var(--accent);
+    line-height: 1.8;
+    letter-spacing:0.2em;
     margin-left:130px;
 }
 #about .hero_container h1{
@@ -279,8 +278,9 @@ HOME STYLE */
     color: var(--ink);
     padding:4.5rem 2rem;
     text-align: left;
-    height: 25rem;
-    border: 1px solid var(--accent);
+    height: 20rem;
+    border-top: 1px solid var(--accent) ;
+
 }
 
 #contact .hero_tag{
@@ -308,8 +308,8 @@ HOME STYLE */
 }
 
 #contact .contact_grid{
-  
-    margin-left:130px ;
+    margin-top: -20px;
+    margin-left:100px ;
     padding:2em;
     display:grid;
     grid-template-columns:repeat(4,1fr);
@@ -346,4 +346,95 @@ HOME STYLE */
     font-size: 1rem;
     color:var(--ink);
 }
+
+/* services */
+#services .hero_container{
+    background-color: var(--card);
+    color: var(--ink);
+    padding:4.5rem 2rem;
+    text-align: left;
+    height: 17rem;
+}
+
+#services .hero_tag{
+    font-size: 1rem;
+    max-width: 520px;
+    color:var(--accent);
+    line-height: 1.8;
+    letter-spacing:0.2em;
+    margin-left:130px;
+}
+
+#services .hero_title{
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    margin-left:130px;
+}
+
+#services .hero_desc{
+    font-size:1rem;
+    color: var(--muted);
+    margin-top:3px ;
+    margin-bottom: 20px;
+    max-width: 470px;
+    line-height: 1.8;
+    margin-left:130px;
+}
+#services .services_block{
+     max-width:900px;
+    margin:0 auto;
+    padding:3.5rem 2rem 5rem;
+}
+#services .services_grid{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem;
+    margin-top: 1rem;
+}
+#services .services_item{
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left:3px solid var(--accent);
+    padding:1rem 1.2rem;
+    
+}
+#services .services_item:hover{
+    transform: translateX(3px);
+}
+#services .service_num{
+    font-size:1rem;
+    letter-spacing: 0.2em;
+    color: var(--accent);
+    margin-bottom: 0.4rem;
+}
+#services .service_title{
+    font-size:0.92rem;
+    color:var(--ink);
+    margin-bottom: 0.25rem;
+}
+#services .service_desc{
+    font-size:0.8rem;
+    color:var(--muted);
+    margin-bottom: 0.25rem;
+}
+
+#services .service_tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top:10px;
+}
+#services .service_tag{
+    font-family: 'Space Mono', monospace;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+    color: var(--muted);
+    background: var(--paper);
+    border: 1px solid var(--accent);
+}
+
+
+
+
+
 

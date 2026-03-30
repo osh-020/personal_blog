@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @vite(['resources/css/app.css'])
 </head>
 <body>
       <div  class="header_container">
@@ -12,19 +12,18 @@
                 <nav>
                     <a href="#home" >Home</a>
                     <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
                     <a href="#services">Services</a>
                     <a href="#blog">Blog</a>
-
+                    <a href="#contact">Contact</a>
                 </nav>
         </header>
     </div>
     @include('home')
     @include('about')
-    @include('contact')
+   
     @include('services')
     @include('blog')
-    
+     @include('contact')
     
 </body>
 </html>
