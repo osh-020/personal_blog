@@ -8,7 +8,7 @@
 <body>
       <div  class="header_container">
         <header>
-            <h1>Prompt <span>Co.</span></h1>
+            <h1>Blog <span>Co.</span></h1>
                 <nav>
                     <a href="#home" >Home</a>
                     <a href="#about">About</a>

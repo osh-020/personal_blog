@@ -167,12 +167,12 @@ HOME STYLE */
     color:var(--accent);
     line-height: 1.8;
     letter-spacing:0.2em;
-    margin-left:130px;
+    margin-left:400px;
 }
 #about .hero_container h1{
     font-family: Georgia, serif;
     font-size: 3rem;
-    margin-left:130px;
+    margin-left:400px;
 }
 #about .page_content{
     max-width:900px;
@@ -271,81 +271,7 @@ HOME STYLE */
 }
 
 
-/* contact */
 
-#contact .hero_container{
-    background-color: var(--card);
-    color: var(--ink);
-    padding:4.5rem 2rem;
-    text-align: left;
-    height: 20rem;
-    border-top: 1px solid var(--accent) ;
-
-}
-
-#contact .hero_tag{
-    font-size: 1rem;
-    max-width: 520px;
-    color:var(--accent);
-    line-height: 1.8;
-    letter-spacing:0.2em;
-    
-}
-
-#contact .hero_title{
-    font-family: Georgia, serif;
-    font-size: 3rem;
-}
-
-#contact .hero_desc{
-    font-size:1rem;
-    color: var(--muted);
-    margin-top:3px ;
-    margin-bottom: 20px;
-    max-width: 470px;
-    line-height: 1.8;
-    
-}
-
-#contact .contact_grid{
-    margin-top: -20px;
-    margin-left:100px ;
-    padding:2em;
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:1rem;
-}
-
-#contact .contact_item{
-    text-align: center;
-    margin-left: 30px;
-}
-
-#contact .contact_item:first-child{
-    text-align: start;
-    margin-left: 0;
-    
-}
-#contact .detail_icon img{
-    margin-top: 70px;
-    width: 30px; 
-    height: 30px; 
-}
-
-#contact .detail_label {
-    font-family: 'Space Mono';
-    font-size: 1rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-top: 0.2rem;
-    margin-bottom: 0.2rem;
-}
-
-#contact .detail_value{
-    font-size: 1rem;
-    color:var(--ink);
-}
 
 /* services */
 #services .hero_container{
@@ -362,13 +288,13 @@ HOME STYLE */
     color:var(--accent);
     line-height: 1.8;
     letter-spacing:0.2em;
-    margin-left:130px;
+    margin-left:400px;
 }
 
 #services .hero_title{
     font-family: Georgia, serif;
     font-size: 3rem;
-    margin-left:130px;
+    margin-left:400px;
 }
 
 #services .hero_desc{
@@ -376,9 +302,9 @@ HOME STYLE */
     color: var(--muted);
     margin-top:3px ;
     margin-bottom: 20px;
-    max-width: 470px;
+    
     line-height: 1.8;
-    margin-left:130px;
+    margin-left:400px;
 }
 #services .services_block{
      max-width:900px;
@@ -433,8 +359,210 @@ HOME STYLE */
     border: 1px solid var(--accent);
 }
 
+/* blog */
+#blog .hero_container{
+    background-color: var(--card);
+    color: var(--ink);
+    padding:4.5rem 2rem;
+    text-align: left;
+    height: 17rem;
+}
+
+#blog .hero_tag{
+    font-size: 1rem;
+    color:var(--accent);
+    line-height: 1.8;
+    letter-spacing:0.2em;
+    margin-left:400px;
+}
+
+#blog  .hero_title{
+    font-family: Georgia, serif;
+    font-size: 3rem;
+    margin-left:400px;
+}
+
+#blog  .hero_desc{
+    font-size:1rem;
+    color: var(--muted);
+    margin-top:3px ;
+    margin-bottom: 20px;
+    line-height: 1.8;
+    margin-left:400px;
+}
+
+#blog .blog_block{
+    max-width: 800px;
+    margin:0 auto;
+    padding: 3.5rem 2rem 5rem;
+}
+
+#blog .blog_post{
+    background-color: var(--card);
+    border: 1px solid var(--accent);
+    padding: 2.4rem;
+    margin-bottom: 50px;
+}
+
+#blog .post_meta_top{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+#blog .post_category{
+    font-family: 'Space Mono', monospace;
+    font-size: 0.62rem;
+    letter-spacing: 0.14rem;
+    text-transform: uppercase;
+    background-color: var(--accent);
+    color: var(--paper);
+    padding: 0.3rem 0.9rem;
+}
+
+#blog .post_date, .post_read_time{
+    font-family: 'Space Mono' monospace;
+    font-size: 0.65rem;
+    color:var(--muted);
+}
+
+#blog .blog_post .blog_title{
+    font-size: 2rem; 
+    margin-bottom: 10px;
+}
+
+#blog .blog_body p{
+    font-size: 1.rem;
+    color:var(--muted);
+    line-height: 1.85;
+}
+
+#blog .blog_tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9rem;
+    margin-top:10px;
+}
 
 
+#blog .blog_tag{
+    font-family: 'Space Mono', monospace;
+    padding: 0.2rem 0.6rem;
+    font-size: 0.7rem;
+    color: var(--muted);
+    background: var(--paper);
+    border: 1px solid var(--accent);
+}
+
+#blog .blog_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.2rem;  
+    margin-top: 1.4rem;
+    border-top:1px solid var(--border) ;
+}
+
+#blog .author_row{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+#blog .author_name{
+    font-size: 0.82rem;
+}
+
+#blog .blog_link{
+    margin-left: 450px;
+    font-family: 'Space Mono' monospace;
+    font-size: 0.70rem;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+}
+
+#blog .blog_link:hover{
+    border-color: var(--accent);
+}
 
 
+/* contact */
 
+#contact .hero_container{
+    background-color: var(--card);
+    color: var(--ink);
+    padding:4.5rem 2rem;
+    text-align: left;
+    height: 20rem;
+    border-top: 1px solid var(--accent) ;
+
+}
+
+#contact .hero_tag{
+    font-size: 1rem;
+    max-width: 520px;
+    color:var(--accent);
+    line-height: 1.8;
+    letter-spacing:0.2em;
+    
+}
+
+#contact .hero_title{
+    font-family: Georgia, serif;
+    font-size: 3rem;
+}
+
+#contact .hero_desc{
+    font-size:1rem;
+    color: var(--muted);
+    margin-top:3px ;
+    margin-bottom: 20px;
+    max-width: 470px;
+    line-height: 1.8;
+    
+}
+
+#contact .contact_grid{
+    margin-top: -20px;
+    margin-left:400px ;
+    padding:2em;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:1rem;
+}
+
+#contact .contact_item{
+    text-align: center;
+    margin-left: 30px;
+}
+
+#contact .contact_item:first-child{
+    text-align: start;
+    margin-left: 0;
+    
+}
+#contact .detail_icon img{
+    margin-top: 70px;
+    width: 30px; 
+    height: 30px; 
+}
+
+#contact .detail_label {
+    font-family: 'Space Mono';
+    font-size: 1rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+}
+
+#contact .detail_value{
+    font-size: 1rem;
+    color:var(--ink);
+}
