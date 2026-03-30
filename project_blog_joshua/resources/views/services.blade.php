@@ -1,3 +1,14 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite(['resources/css/app.css'])
+        <title>Services</title>
+</head>
+<body>
+    @include('header')
 <section id="services">
     <div class="hero_container">
         <p class="hero_tag">WHAT I OFFER</p>
@@ -56,3 +67,5 @@
         </div>
     </main>
  </section>
+</body>
+</html>

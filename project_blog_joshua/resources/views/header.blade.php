@@ -1,29 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     @vite(['resources/css/app.css'])
-</head>
-<body>
+
+<section id="header">
       <div  class="header_container">
         <header>
             <h1>Blog <span>Co.</span></h1>
                 <nav>
-                    <a href="#home" >Home</a>
-                    <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#blog">Blog</a>
-                    <a href="#contact">Contact</a>
+                    <a href="{{ route('home') }}">Home</a>
+                    <a href="{{ route('about') }}">About</a>
+                    <a href="{{ route('services') }}">Services</a>
+                    <a href="{{ route('blog') }}">Blog</a>
+                    <a href="{{ route('contact') }}">Contact</a>
                 </nav>
         </header>
     </div>
-    @include('home')
-    @include('about')
-   
-    @include('services')
-    @include('blog')
-     @include('contact')
-    
-</body>
-</html>
+   </section>

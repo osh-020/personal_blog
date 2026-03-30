@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite(['resources/css/app.css'])
+</head>
+<body>
+    @include('header')
 <section id="blog">
     <div class="hero_container">
         <p class="hero_tag">MY WRITING</p>
@@ -15,7 +24,7 @@
                     <span class="post_date">March 30, 2026</span>
                     <span class="post_read_time">5 min read</span>
                 </div>
-                <h2 class="blog_title">Getting Started with Laravel: My Experience Buuilding My First Web App</h2>
+                <h2 class="blog_title">Getting Started with Laravel: My Experience Building My First Web App</h2>
                 <div class="blog_body">
                     <p>
                         When I first heard about Laravel, I thought it was just another PHP framework.
@@ -40,7 +49,7 @@
 
             <article class="blog_post">
                 <div class="post_meta_top">
-                    <span class="post_category">Mobie Development</span>
+                    <span class="post_category">Mobile Development</span>
                     <span class="post_date">March 30, 2026</span>
                     <span class="post_read_time">5 min read</span>
                 </div>
@@ -68,3 +77,5 @@
         </div>
     </main>
 </section>
+</body>
+</html>

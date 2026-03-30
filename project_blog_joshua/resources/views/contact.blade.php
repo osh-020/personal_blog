@@ -1,4 +1,13 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite(['resources/css/app.css'])
+    <title>Contact</title>
+</head>
+<body>
+    @include('header')
     <section id="contact">
         <div class="hero_container">
             <div class="contact_grid">
@@ -34,3 +43,5 @@
 
 
     </section>
+</body>
+</html>

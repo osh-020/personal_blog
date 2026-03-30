@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @vite(['resources/css/app.css'])
+        <title>About</title>
+</head>
+<body>
+@include('header')
 <section id="about">
     <div class="hero_container">
         <h2> WHO I AM</h2>
@@ -77,3 +87,5 @@
     </main>
     
 </section>
+</body>
+</html>
