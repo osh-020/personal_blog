@@ -1,6 +1,3 @@
-
-
-
 <section id="header">
       <div  class="header_container">
         <header>
