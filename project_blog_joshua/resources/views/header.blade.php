@@ -1,5 +1,5 @@
 
-    @vite(['resources/css/app.css'])
+
 
 <section id="header">
       <div  class="header_container">
