@@ -20,12 +20,12 @@
                 <img  src="{{ asset('images/profile.jpg') }}" alt="Logo">
                 <div class="author_desc">
                     <h3 >Joshua S. Rosario</h3>
-                    <p>PROMPT ENGINEER • IT STUDENT</p>
+                    <p>CUTE LANG   •   IT STUDENT</p>
                 </div>
             </div>
             
             <div class="blog_container">
-            <a href="#blog">Read My Blogs</a>
+            <a href="{{ route('blog') }}">Read My Blogs</a>
             </div>
         </div>
 </section>
