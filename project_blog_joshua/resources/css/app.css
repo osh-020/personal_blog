@@ -15,40 +15,24 @@
     --card:   #ecffe9;  /* card background */
  }
 
-
-.header_container{
+/* NAV STYLE */
+nav {
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 100;
     background: var(--card);
     border-bottom: 1px solid var(--border);
-}
-
- header {
-    max-width: 1100px;
+    max-width: auto;
     margin: 0 auto;
     padding: 0 2rem;
     height: 64px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1.8rem;
 }
- header h1 {
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-}
- 
-header span{
-    color:var(--accent);
-}
-nav {
-    display: flex; 
-    gap: 1.8rem; 
-}
- 
- nav a {
+
+nav a {
     font-size: 1rem;
     letter-spacing: 0.1em;
     text-transform: uppercase;
@@ -56,9 +40,9 @@ nav {
     text-decoration: none;
     transition: color 0.2s;
 }
- 
- nav a:hover{
-    color: var(--accent); 
+
+nav a:hover {
+    color: var(--accent);
 }
 
 
@@ -498,7 +482,7 @@ HOME STYLE */
     color: var(--ink);
     padding:4.5rem 2rem;
     text-align: left;
-    height: 20rem;
+    height: 25rem;
     border-top: 1px solid var(--accent) ;
 
 }

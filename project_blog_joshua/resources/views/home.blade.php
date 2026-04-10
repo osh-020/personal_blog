@@ -1,13 +1,4 @@
- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite(['resources/css/app.css'])
-        <title>Home</title>
-</head>
-<body>
-    @include('header')
+<x-layout title="Home">
     <section id="home">
         <div class="welcome_banner">
             <h1>PERSONAL BLOG</h1>
@@ -28,6 +19,5 @@
             <a href="{{ route('blog') }}">Read My Blogs</a>
             </div>
         </div>
-</section>
-</body>
-</html>
+    </section>
+</x-layout>

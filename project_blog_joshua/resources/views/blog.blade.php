@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @vite(['resources/css/app.css'])
-    <title>Blog</title>
-</head>
-<body>
-    @include('header')
+<x-layout title="Blog">
 <section id="blog">
     <div class="hero_container">
         <p class="hero_tag">MY WRITING</p>
@@ -78,5 +69,4 @@
         </div>
     </main>
 </section>
-</body>
-</html>
+</x-layout>
